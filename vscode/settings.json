@@ -1,0 +1,9 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
+{
+    "window.menuBarVisibility": "default",
+    "php.executablePath": "D:\\WTServer\\bin\\PHP\\64bit-PHP-7.1\\php.exe",
+    "php.validate.executablePath": "D:\\WTServer\\bin\\PHP\\64bit-PHP-7.1\\php.exe",
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 4,
+    "editor.tabCompletion": true,
+}

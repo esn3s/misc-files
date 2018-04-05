@@ -1,0 +1,59 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"property_function": {
+		"prefix": "pf",
+		"body": [
+			"${1:prop_name}: function(${2:func_param1}) {",
+			"\t",
+			"},",
+		],
+		"description": "property as function",
+	},
+	"property_arrow_function": {
+		"prefix": "paf",
+		"body": [
+			"${1:prop_name}: (${2:func_param1}) => {",
+			"\treturn ",
+			"},",
+		],
+		"description": "property as arrow function",
+	},
+	"promise_then_function": {
+		"prefix": "thenf",
+		"body": [
+			".then(function(${1:r}) {",
+			"\treturn ",
+			"})",
+		],
+		"description": "promise .then() as function",
+	},
+	"promise_then_arrow_function": {
+		"prefix": "thenaf",
+		"body": [
+			".then((${1:r}) => {",
+			"\treturn ",
+			"})",
+		],
+		"description": "promise .then() as arrow function",
+	},
+	"promise_then_quick_arrow_function": {
+		"prefix": "thenqaf",
+		"body": [
+			".then((${1:r}) => ${2:toReturn})",
+		],
+		"description": "promise .then() as quick arrow function",
+	},
+}
