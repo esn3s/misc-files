@@ -1,0 +1,25 @@
+cmder: https://cmder.net/
+conemu: https://conemu.github.io/
+
+grid:
+https://stackoverflow.com/questions/54400548/split-current-tab-into-many-rows-cells-then-create-a-second-tab-and-do-the-same
+
+Start four cmd tabs in a grid 2x2 (Win+R or shortcut syntax).
+Win+R then:
+D:\_Apps\cmder_mini\vendor\conemu-maximus5\ConEmu64.exe -runlist cmd -cur_console:fn ||| cmd -cur_console:s1TVn ||| cmd -cur_console:s1THn ||| cmd -cur_console:s2THn
+
+grid 2*1
+D:\_Apps\cmder_mini\vendor\conemu-maximus5\ConEmu64.exe -runlist cmd -cur_console:fn ||| cmd -cur_console:s1TVn ||| cmd -cur_console:s1THn
+
+options -console: https://conemu.github.io/en/NewConsole.html#syntax
+- :t:"toto" --> title of new console
+- :s --> split
+- :d:"path" --> start path
+
+PR3 config: 2*1
+cmd /k ""%ConEmuDir%\..\init.bat" " -cur_console:t:"PR3 - Front dev":fn:d:"G:\www_projects\ProxyReader_v3" {cmd::Cmder}
+
+cmd /k ""%ConEmuDir%\..\init.bat" " -cur_console:t:"PR3 - API":s1TVn:d:"G:\www_projects\@_PHP_API" {cmd::Cmder}
+
+cmd /k ""%ConEmuDir%\..\init.bat" " -cur_console:t:"PR3 - Front build":s1THn:d:"G:\www_projects\ProxyReader_v3" {cmd::Cmder}
+
