@@ -1,0 +1,16 @@
+[alias]
+	ckm = !git checkout master
+	st = status
+	br = branch
+	brd = branch -D
+	ck = checkout
+	ckb = checkout -b
+	l1 = log -1
+	l2 = log -2
+	l5 = log -5
+	l = log -2
+	ll = log -5
+	rem = !git ckm && git fetch && git reset --hard origin/master && git l
+	as = !git add . && git status
+	cnm = commit -n -m
+	remck = !git rem && git ck
